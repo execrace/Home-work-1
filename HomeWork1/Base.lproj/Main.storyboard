@@ -60,10 +60,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gdY-lm-TTe">
-                                <rect key="frame" x="65.5" y="420" width="283" height="66"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="66" id="Fky-lj-xky"/>
-                                </constraints>
+                                <rect key="frame" x="65.5" y="428" width="283" height="50"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Ниче не понятно! Верните меня обратно на завод!">
                                     <fontDescription key="titleFontDescription" name="ZapfDingbatsITC" family="Zapf Dingbats" pointSize="18"/>
@@ -84,7 +81,6 @@
                             <constraint firstItem="kfa-0Q-0jj" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="JjX-zU-858"/>
                             <constraint firstItem="mNw-S9-gWM" firstAttribute="top" secondItem="fbk-1k-GXz" secondAttribute="top" id="K8y-YI-4BN"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="mNw-S9-gWM" secondAttribute="trailing" constant="20.5" id="KZu-sI-3kD"/>
-                            <constraint firstItem="gdY-lm-TTe" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.0736607" id="OV9-Q5-GSI"/>
                             <constraint firstItem="mNw-S9-gWM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="237" id="Rxc-dC-Ti1"/>
                             <constraint firstItem="mNw-S9-gWM" firstAttribute="bottom" secondItem="fbk-1k-GXz" secondAttribute="bottom" id="a12-4y-ZE4"/>
                             <constraint firstItem="gdY-lm-TTe" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="c1g-Ot-cN5"/>

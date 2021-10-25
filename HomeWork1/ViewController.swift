@@ -25,6 +25,9 @@ class ViewController: UIViewController {
         self.resultLabel.text = "\(self.count)"
         if count == 10 {
             self.plusButton.isEnabled = false
+            }
+        if count > -10  {
+                self.minusButton.isEnabled = true
         }
     }
     
@@ -37,6 +40,9 @@ class ViewController: UIViewController {
     self.resultLabel.text = "\(self.count)"
         if count == -10 {
             self.minusButton.isEnabled = false
+        }
+        if count < 10  {
+                self.plusButton.isEnabled = true
         }
     }
     
