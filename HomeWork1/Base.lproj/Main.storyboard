@@ -16,51 +16,43 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="house" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="aop-qs-TYk">
-                                <rect key="frame" x="132" y="43" width="150" height="150"/>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="150" id="2hp-We-4aj"/>
-                                    <constraint firstAttribute="width" constant="150" id="3Oa-qb-u1u"/>
-                                    <constraint firstAttribute="height" constant="150" id="DJ8-eh-dfn"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="d5P-hY-GhO"/>
-                                </constraints>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Сколько часов будем кодить?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kfa-0Q-0jj">
-                                <rect key="frame" x="57" y="220" width="300" height="21.5"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="YYg-g3-7QM"/>
-                                </constraints>
+                                <rect key="frame" x="72.5" y="228" width="269" height="21.5"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fbk-1k-GXz">
-                                <rect key="frame" x="20" y="343" width="187.5" height="50"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="110" id="dwP-zQ-FCz"/>
-                                    <constraint firstAttribute="height" constant="50" id="gCS-oQ-xCb"/>
-                                </constraints>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Как можно больше!">
-                                    <fontDescription key="titleFontDescription" name="Verdana" family="Verdana" pointSize="16"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="plusTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hQ8-kK-Xh8"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mNw-S9-gWM">
-                                <rect key="frame" x="237" y="343" width="156.5" height="50"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Как можно меньше!">
-                                    <fontDescription key="titleFontDescription" name="Verdana" family="Verdana" pointSize="18"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="minusTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QwU-Rn-sbf"/>
-                                </connections>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="fYf-AG-jYB">
+                                <rect key="frame" x="13" y="299.5" width="388" height="33.5"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fbk-1k-GXz">
+                                        <rect key="frame" x="0.0" y="0.0" width="189" height="33.5"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Как можно больше!">
+                                            <fontDescription key="titleFontDescription" name="Verdana" family="Verdana" pointSize="16"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="plusTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hQ8-kK-Xh8"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mNw-S9-gWM">
+                                        <rect key="frame" x="199" y="0.0" width="189" height="33.5"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Как можно меньше!">
+                                            <fontDescription key="titleFontDescription" name="Verdana" family="Verdana" pointSize="16"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="minusTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QwU-Rn-sbf"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gdY-lm-TTe">
-                                <rect key="frame" x="65.5" y="428" width="283" height="50"/>
+                                <rect key="frame" x="65.5" y="363" width="283" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="283" id="E0j-qi-F3r"/>
+                                    <constraint firstAttribute="height" constant="64" id="Q7e-QA-uA5"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Ниче не понятно! Верните меня обратно на завод!">
                                     <fontDescription key="titleFontDescription" name="ZapfDingbatsITC" family="Zapf Dingbats" pointSize="18"/>
@@ -69,28 +61,27 @@
                                     <action selector="resetTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DvC-zC-OZG"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="house" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="aop-qs-TYk">
+                                <rect key="frame" x="103.5" y="43" width="207" height="152"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="152" id="AAJ-dG-Mwl"/>
+                                    <constraint firstAttribute="width" constant="207" id="Nw1-IC-cy2"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemPurpleColor"/>
                         <color key="tintColor" systemColor="labelColor"/>
                         <constraints>
-                            <constraint firstItem="aop-qs-TYk" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="2rY-IV-Myb"/>
-                            <constraint firstItem="fbk-1k-GXz" firstAttribute="top" secondItem="kfa-0Q-0jj" secondAttribute="bottom" constant="101.5" id="5xx-TF-C7N"/>
-                            <constraint firstItem="mNw-S9-gWM" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="fbk-1k-GXz" secondAttribute="trailing" constant="8" symbolic="YES" id="9J2-TJ-Eoo"/>
-                            <constraint firstItem="kfa-0Q-0jj" firstAttribute="top" secondItem="aop-qs-TYk" secondAttribute="bottom" constant="26" id="JM6-TN-UIM"/>
-                            <constraint firstItem="kfa-0Q-0jj" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="JjX-zU-858"/>
-                            <constraint firstItem="mNw-S9-gWM" firstAttribute="top" secondItem="fbk-1k-GXz" secondAttribute="top" id="K8y-YI-4BN"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="mNw-S9-gWM" secondAttribute="trailing" constant="20.5" id="KZu-sI-3kD"/>
-                            <constraint firstItem="mNw-S9-gWM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="237" id="Rxc-dC-Ti1"/>
-                            <constraint firstItem="mNw-S9-gWM" firstAttribute="bottom" secondItem="fbk-1k-GXz" secondAttribute="bottom" id="a12-4y-ZE4"/>
-                            <constraint firstItem="gdY-lm-TTe" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="c1g-Ot-cN5"/>
-                            <constraint firstItem="aop-qs-TYk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="c6W-VZ-tXg"/>
-                            <constraint firstItem="aop-qs-TYk" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-329" id="eKl-1N-R7V"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="kfa-0Q-0jj" secondAttribute="trailing" id="lPd-h6-WSo"/>
-                            <constraint firstItem="gdY-lm-TTe" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.683575" id="mWz-st-uZr"/>
-                            <constraint firstItem="kfa-0Q-0jj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="57" id="pXa-00-XiM"/>
-                            <constraint firstItem="gdY-lm-TTe" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="qMY-Oe-UB5"/>
-                            <constraint firstItem="fbk-1k-GXz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="sbS-pk-IDz"/>
+                            <constraint firstItem="fYf-AG-jYB" firstAttribute="centerX" secondItem="kfa-0Q-0jj" secondAttribute="centerX" id="Dcc-5i-lSG"/>
+                            <constraint firstItem="aop-qs-TYk" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Tcw-B9-ejd"/>
+                            <constraint firstItem="kfa-0Q-0jj" firstAttribute="top" secondItem="aop-qs-TYk" secondAttribute="bottom" constant="32" id="X2h-nK-Mal"/>
+                            <constraint firstItem="gdY-lm-TTe" firstAttribute="top" secondItem="fYf-AG-jYB" secondAttribute="bottom" constant="30" id="agZ-bE-vo5"/>
+                            <constraint firstItem="fYf-AG-jYB" firstAttribute="top" secondItem="kfa-0Q-0jj" secondAttribute="bottom" constant="50" id="asx-7a-Ei1"/>
+                            <constraint firstItem="kfa-0Q-0jj" firstAttribute="centerX" secondItem="aop-qs-TYk" secondAttribute="centerX" id="die-65-Qbc"/>
+                            <constraint firstItem="gdY-lm-TTe" firstAttribute="centerX" secondItem="fYf-AG-jYB" secondAttribute="centerX" id="jKZ-zz-8C6"/>
+                            <constraint firstItem="aop-qs-TYk" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="s7C-yE-G3f"/>
                         </constraints>
                     </view>
                     <connections>
@@ -101,7 +92,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-17.39130434782609" y="109.82142857142857"/>
+            <point key="canvasLocation" x="-23" y="61"/>
         </scene>
     </scenes>
     <resources>
